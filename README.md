@@ -1,7 +1,10 @@
-# Rustlings 🦀
+# Rustlings 🦀 do Brasil 🇧🇷
 
-Welcome to these community Rustlings exercises 😃
+Esse é o repositório com os exercícios do Rustlings traduzidos para o Brasileiro (Português do Brasil) 😃
 
-First, [install Rustlings using the official instructions](https://github.com/rust-lang/rustlings) ✅
+Primeiro é necessário, [instalar o Rustlings seguindo essas instruções](https://github.com/rust-lang/rustlings) ✅
 
-Then, clone this repository, open a terminal in this directory and run `rustlings` to get started with the exercises 🚀
+Depois é clonar esse repositório, abrir o terminal e executar `rustlings` e os exercícios vão começar 🚀
+
+> [!IMPORTANT]
+> Estou em processo de tradução e básico de execução ainda não tem como traduzir mas vou tentar traduzir o processo inteiro.
