@@ -1,0 +1,740 @@
+# The format version is an indicator of the compatibility of community exercises with the
+# Rustlings program.
+# The format version is not the same as the version of the Rustlings program.
+# In case Rustlings makes an unavoidable breaking change to the expected format of community
+# exercises, you would need to raise this version and adapt to the new format.
+# Otherwise, the newest version of the Rustlings program won't be able to run these exercises.
+format_version = 1
+
+# Optional multi-line message to be shown to users when just starting with the exercises.
+welcome_message = """
+'                      __  ___
+'     _______  _______/ /_/ (_)___  ____ ______
+'    / ___/ / / / ___/ __/ / / __ \\/ __ `/ ___/
+'   / /  / /_/ (__  ) /_/ / / / / / /_/ (__  )
+'  /_/   \\__,_/____/\\__/_/_/_/ /_/\\__, /____/
+'                                /____/
+'
+'     Bem-vindo a versão brasileira
+'"""
+
+# Optional multi-line message to be shown to users after finishing all exercises.
+final_message = """Espero que tenha se divertido e aprendido com esses exercícios :D"""
+
+
+# Repeat this section for every exercise.
+[[exercises]]
+# Exercise name which is the exercise file name without the `.rs` extension.
+name = "intro1"
+dir = "00_intro"
+test = false
+hint = """Pressione `n` para ir para o próximo exercicío."""
+skip_check_unsolved = true
+
+[[exercises]]
+name = "intro2"
+dir = "00_intro"
+test = false
+hint = """Será que `printline!` é a forma correta ？Talvez precisamos de outro comando."""
+
+[[exercises]]
+name = "variables1"
+dir = "01_variables"
+test = false
+hint = """Precisamos dizer ao compilador que queremos uma nova variável"""
+
+[[exercises]]
+name = "variables2"
+dir = "01_variables"
+test = false
+hint = """A mensagem do compilador indica que o Rust não consegue deduzir o tipo da variável `x` a partir do código.
+O que acontece se adicionarmos uma anotação de tipo na primeira linha da função `main`?
+E se atribuirmos um valor para `x`?
+Se fizermos ambas as coisas, o que muda?
+Além disso, que tipo `x` deveria ter?
+O que acontece se `x` e `10` forem do mesmo tipo? E se forem tipos diferentes?"""
+
+[[exercises]]
+name = "variables3"
+dir = "01_variables"
+test = false
+hint = """Você está tentando usar uma variável que foi criada mas não recebeu valor?
+Esse erro é comum em linguagens de programação (ainda bem que o compilador Rust detectou isso)."""
+
+[[exercises]]
+name = "variables4"
+dir = "01_variables"
+test = false
+hint = """No Rust, as variáveis por padrão são imutáveis.
+Mas aqui queremos atribuir um novo valor, ou seja, alterar essa variável.
+Que palavra-chave precisamos adicionar ao declarar a variável para torná-la mutável?"""
+
+[[exercises]]
+name = "variables5"
+dir = "01_variables"
+test = false
+hint = """No exercício `variables4`, aprendemos a usar uma palavra-chave especial para tornar variáveis mutáveis.
+Porém, neste exercício, essa abordagem não funciona.
+Isso porque agora queremos atribuir um tipo diferente ao mesmo nome de variável. Às vezes, pode ser útil reutilizar o nome da variável (por exemplo, mudando apenas o tipo de dado).
+Para isso, o Rust oferece o recurso de `shadowing` (sombreamento de variáveis).
+Leia mais no The Rust Book:
+https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html#shadowing"""
+
+[[exercises]]
+name = "variables6"
+dir = "01_variables"
+test = false
+hint = """Até agora aprendemos sobre variáveis e mutabilidade, mas existe um tipo importante no Rust chamado constante.
+Constantes são sempre imutáveis e são declaradas com a palavra-chave `const`.
+Vale notar que o tipo da constante sempre precisa ser explicitamente declarado no código.
+Veja mais sobre diferenças entre variáveis e constantes no The Rust Book:
+https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html#constants"""
+
+[[exercises]]
+name = "functions1"
+dir = "02_functions"
+test = false
+hint = """Dentro da função `main` foi chamada a função `call_me`, mas essa função não existe no código.
+Além disso, parece que essa função não precisa de parâmetros, nem retorna valor, parecido com a função `main`."""
+
+[[exercises]]
+name = "functions2"
+dir = "02_functions"
+test = false
+hint = """No Rust, a assinatura da função (a parte que descreve entrada e saída) precisa declarar os tipos.
+O que está faltando na função `call_me`?"""
+
+[[exercises]]
+name = "functions3"
+dir = "02_functions"
+test = false
+hint = """A declaração da função está correta, mas parece que o modo como ela está sendo chamada tem problema."""
+
+[[exercises]]
+name = "functions4"
+dir = "02_functions"
+test = false
+hint = """A mensagem de erro aponta que falta declarar o tipo de retorno no final da função `sale_price`, após o “->”. Veja como é feito na função `is_even`."""
+
+[[exercises]]
+name = "functions5"
+dir = "02_functions"
+test = false
+hint = """Rust diferencia expressões de instruções.
+Expressões retornam um valor, instruções apenas retornam `()` (vazio).
+A função `square` deveria retornar um `i32`, mas está retornando `()`.
+Veja bem o código da função `square`."""
+
+[[exercises]]
+name = "if1"
+dir = "03_if"
+hint = """Você também pode realizar a operação desejada em uma única linha.
+No Rust, lembre-se destes pontos:
+- Condição do `if` não precisa de parênteses.
+- `if` e `else` são expressões.
+- Os blocos de código geralmente vêm entre `{}` após a condição."""
+
+[[exercises]]
+name = "if2"
+dir = "03_if"
+hint = """Considere que em Rust cada bloco de condição precisa retornar valores do mesmo tipo.
+Para saber o que o teste espera, leia o caso de teste: “o que é passado, o que se espera retornar”."""
+
+[[exercises]]
+name = "if3"
+dir = "03_if"
+hint = """Considere que em Rust cada bloco de condição precisa retornar valores do mesmo tipo."""
+
+[[exercises]]
+name = "quiz1"
+dir = "quizzes"
+hint = """Este exercício ainda não tem dica.
+(Precisa de dica? Abra uma questão em https://github.com/SandmeyerX/rustlings-zh-cn/issues)"""
+
+[[exercises]]
+name = "primitive_types1"
+dir = "04_primitive_types"
+test = false
+hint = """Colocar o operador `!` antes de um valor booleano inverte o valor.
+Exemplo: `!true == false`
+Isso funciona também com variáveis booleanas de valor `false`."""
+
+[[exercises]]
+name = "primitive_types2"
+dir = "04_primitive_types"
+test = false
+hint = """No Rust, o tipo de caractere `char` tem estas características:
+1. Definido por aspas simples: use aspas simples para um único caractere como `'A'` ou `'😻'`, diferente das aspas duplas de string (`"abc"`).
+2. Suporte Unicode: cada `char` tem 4 bytes e pode representar qualquer caractere Unicode, incluindo chinês, emojis etc.
+3. Conversão de tipo: apenas `u8` pode ser convertido diretamente para `char` com `as`, outros tipos exigem métodos como `std::char::from_u32`.
+4. Diferença para string: strings (`String`/`&str`) guardam sequências de bytes em UTF-8, enquanto `char` guarda o código Unicode diretamente."""
+
+[[exercises]]
+name = "primitive_types3"
+dir = "04_primitive_types"
+test = false
+hint = """No Rust há uma maneira simples de inicializar arrays de tamanho fixo:
+`let nums = [6; 99999];`
+Isso cria um array de 99999 elementos, todos com valor 6.
+O quê? Você disse que pode fazer assim: `let nums = [6, 6, 6, ..., 6, 6];`
+Você é persistente mesmo...
+"""
+
+[[exercises]]
+name = "primitive_types4"
+dir = "04_primitive_types"
+hint = """Para passar no teste de `nice_slice`, use a sintaxe de fatia de array.
+Extraia do array `a` os elementos do índice 1 até o 4 (exclusivo), assim: `&nome_array[inicio..fim]`."""
+
+[[exercises]]
+name = "primitive_types5"
+dir = "04_primitive_types"
+test = false
+hint = """Use a sintaxe de desconstrução de tupla: com o comando `let`, vincule os elementos da tupla `cat` às variáveis `name` e `age`, assim: `let (nome, idade) = nome_tupla;`."""
+
+[[exercises]]
+name = "primitive_types6"
+dir = "04_primitive_types"
+hint = """Índices de tupla começam em 0. Use `.índice` para acessar. Para atribuir o segundo elemento de `numbers` (índice 1) à variável `second`, faça `let second = numbers.índice;`."""
+
+[[exercises]]
+name = "vecs1"
+dir = "05_vecs"
+hint = """No Rust existem duas formas de definir um vetor (array dinâmico):
+1. Use `Vec::new()` para criar um vetor vazio e depois adicionar elementos com `push`.
+2. Use o macro `vec![]` para definir e inicializar elementos (mais simples se já sabe os valores).
+Mais detalhes no The Rust Book:
+https://doc.rust-lang.org/stable/book/ch08-01-vectors.html"""
+
+[[exercises]]
+name = "vecs2"
+dir = "05_vecs"
+hint = """No primeiro método, crie um vetor vazio e depois adicione elementos.
+No segundo, mapeie os valores de entrada e colete (`collect`) em um vetor.
+Tente implementar ambos e escolha o que preferir.
+Dica: prefiro o segundo, acho mais “rusty” e elegante ;)"""
+
+[[exercises]]
+name = "move_semantics1"
+dir = "06_move_semantics"
+hint = """Adicionar elementos ao `vec` altera seu valor, mas variáveis por padrão são imutáveis. Como declarar `vec` para permitir alteração?"""
+
+[[exercises]]
+name = "move_semantics2"
+dir = "06_move_semantics"
+hint = """Ao rodar este exercício, percebeu o erro “empréstimo de valor já movido”?
+No Rust, ao passar uma variável para uma função sem retorno explícito, ela não pode ser usada depois.
+Ou seja, ao passar `vec0` para `fill_vec`, a posse (ownership) passa para `vec1`, e não é possível acessar `vec0`.
+Para resolver, crie um clone de `vec0` e passe o clone para `fill_vec`."""
+
+[[exercises]]
+name = "move_semantics3"
+dir = "06_move_semantics"
+hint = """Diferente do anterior, a linha `let mut vec = vec` no começo da função `fill_vec` foi removida.
+Agora adicione o `mut` ao definir o vetor inicial."""
+
+[[exercises]]
+name = "move_semantics4"
+dir = "06_move_semantics"
+hint = """Reflita sobre o escopo do empréstimo mutável. O que acontece ao modificar `x` com referência mutável?
+Leia sobre referências mutáveis no The Rust Book:
+https://doc.rust-lang.org/stable/book/ch04-02-references-and-borrowing.html"""
+
+[[exercises]]
+name = "move_semantics5"
+dir = "06_move_semantics"
+test = false
+hint = """Veja o capítulo “Referências e Empréstimos” do The Rust Book:
+https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html
+O primeiro problema é que `get_char` obtém a posse da string, fazendo `data` ser movido, e assim não pode ser usado em `string_uppercase`.
+Corrija isso e ajuste também a assinatura da função `string_uppercase`."""
+
+[[exercises]]
+name = "structs1"
+dir = "07_structs"
+hint = """Rust tem três tipos de struct, cada um serve para agrupar dados relacionados.
+Struct comum guarda dados e nomes (fields).
+Struct tupla é como uma tupla com nome, sem nomes nos campos.
+Struct unitária não tem campos, útil com generics.
+Neste exercício, implemente todos os tipos de struct. Veja The Rust Book:
+https://doc.rust-lang.org/stable/book/ch05-01-defining-structs.html"""
+
+[[exercises]]
+name = "structs2"
+dir = "07_structs"
+hint = """Criar instâncias de struct é simples, basta informar os campos.
+Há também formas abreviadas, veja no The Rust Book:
+https://doc.rust-lang.org/stable/book/ch05-01-defining-structs.html#creating-instances-from-other-instances-with-struct-update-syntax"""
+
+[[exercises]]
+name = "structs3"
+dir = "07_structs"
+hint = """Na função `is_international`, talvez seja necessário verificar destino, origem ou países envolvidos para saber se o pacote é internacional.
+Na função `get_fees`, são necessários parâmetros extras, e talvez campos sobre peso, dimensões, tipo de envio, destino etc. no struct `Package`.
+Para saber mais sobre métodos, veja The Rust Book:
+https://doc.rust-lang.org/stable/book/ch05-03-method-syntax.html"""
+
+[[exercises]]
+name = "enums1"
+dir = "08_enums"
+test = false
+hint = """Crie todas as variantes usadas para o enum `Message`."""
+
+[[exercises]]
+name = "enums2"
+dir = "08_enums"
+test = false
+hint = """No Rust você pode criar enums com diferentes formas de dados:
+​Struct anônimo: `Move { x: i32, y: i32 }`
+​Struct nomeado: defina `struct Point` e vincule a variante `Move(Point)`
+​String única: `Echo(String)`
+​Tupla: `ChangeColor(u8, u8, u8)`
+​Sem dados: `Quit`
+...
+Isso permite que enums sejam flexíveis para vários cenários e tratados pelo padrão de correspondência."""
+
+[[exercises]]
+name = "enums3"
+dir = "08_enums"
+hint = """Primeiro, defina o tipo enum, sem erros.
+Depois, na função `process()`, crie uma expressão `match`. Para acessar valores do enum, use a expressão `match` para desconstruir."""
+
+[[exercises]]
+name = "strings1"
+dir = "09_strings"
+test = false
+hint = """A função `current_favorite_color` retorna um slice com tempo de vida `static`.
+Como os dados da string estão embutidos no código, eles existem durante toda a execução.
+Apesar de slices de string e `String` serem diferentes, você pode converter usando `From`."""
+
+[[exercises]]
+name = "strings2"
+dir = "09_strings"
+test = false
+hint = """Basta mudar o valor vinculado à variável `word` de `String` para slice de string (`&str`).
+Outra abordagem: na expressão `if`, adicione um caractere para forçar a conversão de `String` para slice.
+Para entender a conversão, veja The Rust Book:
+https://doc.rust-lang.org/book/ch15-02-deref.html#implicit-deref-coercions-with-functions-and-methods"""
+
+[[exercises]]
+name = "strings3"
+dir = "09_strings"
+hint = """A biblioteca padrão de strings traz funções úteis:
+https://doc.rust-lang.org/std/string/struct.String.html#method.trim
+`compose_me`: use o macro `format!` ou converta slices para `String`.
+Para a função expansível `replace_me`, veja o método `replace`:
+https://doc.rust-lang.org/std/string/struct.String.html#method.replace"""
+
+[[exercises]]
+name = "strings4"
+dir = "09_strings"
+test = false
+hint = """Substitua a chamada `placeholder` na função `main` por `string` ou `string_slice`.
+Por exemplo, `placeholder("blue");` deve virar `string_slice("blue");`
+Isso porque `"blue"` é do tipo `&str`."""
+
+[[exercises]]
+name = "modules1"
+dir = "10_modules"
+test = false
+hint = """No Rust, por padrão quase tudo é privado. Use a palavra-chave `pub` para tornar público."""
+
+[[exercises]]
+name = "modules2"
+dir = "10_modules"
+test = false
+hint = """Este exercício ainda não tem dica.
+(Precisa de dica? Abra uma questão em https://github.com/SandmeyerX/rustlings-zh-cn/issues)"""
+
+[[exercises]]
+name = "modules3"
+dir = "10_modules"
+test = false
+hint = """Este exercício ainda não tem dica.
+(Precisa de dica? Abra uma questão em https://github.com/SandmeyerX/rustlings-zh-cn/issues)"""
+
+[[exercises]]
+name = "hashmaps1"
+dir = "11_hashmaps"
+hint = """Devem haver pelo menos 5 frutas e pelo menos 3 tipos diferentes de frutas."""
+
+[[exercises]]
+name = "hashmaps2"
+dir = "11_hashmaps"
+hint = """Use os métodos `entry` e `or_insert` da tabela hash.
+Veja mais no The Rust Book:
+https://doc.rust-lang.org/stable/book/ch08-03-hash-maps.html#adding-a-key-and-value-only-if-a-key-isnt-present"""
+
+[[exercises]]
+name = "hashmaps3"
+dir = "11_hashmaps"
+hint = """Dica 1:
+Use os métodos `entry` e `or_insert` (ou `or_insert_with`) para inicializar o valor padrão de `TeamScores` quando o time não existir.
+Mais detalhes no The Rust Book:
+https://doc.rust-lang.org/stable/book/ch08-03-hash-maps.html#adding-a-key-and-value-only-if-a-key-isnt-present
+
+Dica 2:
+Garanta que ao encontrar uma chave já existente, atualize o valor de acordo.
+Mais detalhes no The Rust Book:
+https://doc.rust-lang.org/stable/book/ch08-03-hash-maps.html#updating-a-value-based-on-the-old-value"""
+
+[[exercises]]
+name = "quiz2"
+dir = "quizzes"
+hint = """Este exercício ainda não tem dica.
+(Precisa de dica? Abra uma questão em https://github.com/SandmeyerX/rustlings-zh-cn/issues)"""
+
+[[exercises]]
+name = "options1"
+dir = "12_options"
+hint = """O tipo Option pode ter valor Some e seu valor interno, ou ser None.
+Existem várias formas de acessar o valor interno, como `unwrap` ou correspondência de padrão.
+Usar `unwrap` é fácil, mas pode causar pânico (crash) se houver problema. Como evitar o crash?"""
+
+[[exercises]]
+name = "options2"
+dir = "12_options"
+hint = """Veja os exemplos:
+- https://doc.rust-lang.org/rust-by-example/flow_control/if_let.html
+- https://doc.rust-lang.org/rust-by-example/flow_control/while_let.html
+Lembre-se, Option pode ser usado com `if let` ou `while let`.
+Exemplo: “if let Some(Some(x)) = y”, ou veja Option::flatten."""
+
+[[exercises]]
+name = "options3"
+dir = "12_options"
+test = false
+hint = """O compilador avisa sobre transferência parcial de posse. Veja o erro e corrija conforme orientações.
+Depois, leia a documentação:
+https://doc.rust-lang.org/std/keyword.ref.html"""
+
+[[exercises]]
+name = "errors1"
+dir = "13_error_handling"
+hint = """A função `generate_nametag_text` não deveria retornar Option, mas sim Result.
+Faça isto:
+- Altere a assinatura para `Result<String, String>`.
+- Troque retornos `Some()` por `Ok()`.
+- Troque retornos `None` por `Err(mensagem de erro)`."""
+
+[[exercises]]
+name = "errors2"
+dir = "13_error_handling"
+hint = """Você pode tratar usando `match` em `item_quantity`, ou usar o operador `?`.
+Veja mais no The Rust Book:
+https://doc.rust-lang.org/stable/book/ch09-02-recoverable-errors-with-result.html#a-shortcut-for-propagating-errors-the--operator"""
+
+[[exercises]]
+name = "errors3"
+dir = "13_error_handling"
+test = false
+hint = """Se outras funções podem retornar Result, por que apenas main não pode?
+Na verdade, main pode retornar `Result<(), ErrorType>`, sendo `Ok(())` o resultado sem retorno.
+"""
+
+[[exercises]]
+name = "errors4"
+dir = "13_error_handling"
+hint = """`PositiveNonzeroInteger::new` sempre cria uma nova instância e retorna valor.
+Mas se a checagem falhar, retorna `Err`, caso contrário, retorna `Ok`."""
+
+[[exercises]]
+name = "errors5"
+dir = "13_error_handling"
+test = false
+hint = """No main são gerados dois tipos diferentes de Result, ambos usando `?`.
+Como permitir ambos como retorno?
+O operador `?` chama `From::from` para converter o erro em `Box<dyn Error>`, aceitando vários tipos de erro.
+Veja boxing_errors no The Rust Book:
+https://doc.rust-lang.org/stable/rust-by-example/error/multiple_error_types/boxing_errors.html
+E como usar o operador `?` com boxing_errors:
+https://doc.rust-lang.org/rust-by-example/error/multiple_error_types/boxing_errors.html"""
+
+[[exercises]]
+name = "errors6"
+dir = "13_error_handling"
+hint = """Neste exercício, usamos o `PositiveNonzeroInteger` do anterior.
+Na linha abaixo do `TODO`, veja exemplo de uso do método `map_err` para converter tipos de erro.
+Faça o mesmo com o Result do `parse`. O operador `?` pode ser usado para retorno antecipado.
+Leia sobre `map_err` no The Rust Book:
+https://doc.rust-lang.org/std/result/enum.Result.html#method.map_err"""
+
+[[exercises]]
+name = "generics1"
+dir = "14_generics"
+test = false
+hint = """Vetores dinâmicos do Rust usam generics para aceitar qualquer tipo, com tamanho dinâmico.
+Se `numbers` for do tipo `Vec<T>`, só pode adicionar elementos do tipo T.
+Antes de adicionar, pode usar `into` para converter valores para T. Mas o compilador não sabe o tipo exato, então é preciso anotá-lo.
+Tipos como `u8` e `i8` podem virar `i16`, `i32`, `i64` etc. Escolha o tipo genérico!"""
+
+[[exercises]]
+name = "generics2"
+dir = "14_generics"
+hint = """Este exercício ainda não tem dica.
+(Precisa de dica? Abra uma questão em https://github.com/SandmeyerX/rustlings-zh-cn/issues)"""
+
+[[exercises]]
+name = "traits1"
+dir = "15_traits"
+hint = """Este exercício ainda não tem dica.
+(Precisa de dica? Abra uma questão em https://github.com/SandmeyerX/rustlings-zh-cn/issues)"""
+
+[[exercises]]
+name = "traits2"
+dir = "15_traits"
+hint = """A trait recebe a posse de `self` e retorna `Self`.
+Na assinatura da trait, `append_bar` recebe `self` como parâmetro, mas na implementação pode ser `mut self`.
+Isso é possível pois o valor é possuído de qualquer forma."""
+
+[[exercises]]
+name = "traits3"
+dir = "15_traits"
+hint = """Este exercício ainda não tem dica.
+(Precisa de dica? Abra uma questão em https://github.com/SandmeyerX/rustlings-zh-cn/issues)"""
+
+[[exercises]]
+name = "traits4"
+dir = "15_traits"
+hint = """Você pode usar trait como parâmetro no lugar de tipo específico.
+Tente substituir `???` por `impl [nome da trait]`.
+Veja The Rust Book:
+https://doc.rust-lang.org/stable/book/ch10-02-traits.html#traits-as-parameters"""
+
+[[exercises]]
+name = "traits5"
+dir = "15_traits"
+hint = """Para exigir que o parâmetro implemente múltiplas traits, use a sintaxe `+`.
+Substitua `???` por `impl [primeira trait] + [segunda trait]`.
+Veja The Rust Book:
+https://doc.rust-lang.org/stable/book/ch10-02-traits.html#specifying-multiple-trait-bounds-with-the--syntax"""
+
+[[exercises]]
+name = "quiz3"
+dir = "quizzes"
+hint = """Para este exercício você precisa saber sobre traits, especialmente trait bounds.
+Veja:
+https://doc.rust-lang.org/stable/book/ch10-02-traits.html#using-trait-bounds-to-conditionally-implement-methods
+Na implementação:
+`impl<T: Trait1 + Trait2 + …> for Foo<T> { … }`
+Talvez precise de `use std::fmt::Display;`."""
+
+[[exercises]]
+name = "lifetimes1"
+dir = "16_lifetimes"
+hint = """Este exercício ainda não tem dica.
+(Precisa de dica? Abra uma questão em https://github.com/SandmeyerX/rustlings-zh-cn/issues)"""
+
+[[exercises]]
+name = "lifetimes2"
+dir = "16_lifetimes"
+test = false
+hint = """Note que o lifetime `a` equivale ao menor lifetime entre `x` e `y`.
+Para obter o resultado esperado mantendo o bloco interno, há duas opções:
+1. Mova a declaração de `string2` para ter o mesmo lifetime de `string1` (como ficaria `result`?).
+2. Mova o `println!` para dentro do bloco."""
+
+[[exercises]]
+name = "lifetimes3"
+dir = "16_lifetimes"
+test = false
+hint = """Este exercício ainda não tem dica.
+(Precisa de dica? Abra uma questão em https://github.com/SandmeyerX/rustlings-zh-cn/issues)"""
+
+[[exercises]]
+name = "tests1"
+dir = "17_tests"
+hint = """`assert!` é um macro que recebe um argumento. Se o valor for verdadeiro, não faz nada (teste passa), se falso, gera pânico (falha).
+Teste com vários valores, veja quais passam e quais falham.
+Para testar `false`, pode usar `assert!(!...)`."""
+
+[[exercises]]
+name = "tests2"
+dir = "17_tests"
+hint = """`assert_eq!` é um macro que compara dois argumentos.
+Tente passar valores iguais. O que acontece se passar diferentes? E se inverter a ordem?"""
+
+[[exercises]]
+name = "tests3"
+dir = "17_tests"
+hint = """Neste teste, esperamos que `Rectangle::new` gere pânico ao receber valores negativos.
+Para isso, adicione um atributo especial ao teste.
+Veja em Rust Book:
+https://doc.rust-lang.org/stable/book/ch11-01-writing-tests.html#checking-for-panics-with-should_panic"""
+
+[[exercises]]
+name = "iterators1"
+dir = "18_iterators"
+hint = """Iteradores executam operações sobre todos elementos de uma coleção. O que fazer quando terminam?
+Veja:
+https://doc.rust-lang.org/std/iter/trait.Iterator.html"""
+
+[[exercises]]
+name = "iterators2"
+dir = "18_iterators"
+hint = """`capitalize_first`: a variável `first` é `char`. Para retornar `String` correta, converta para maiúsculo e adicione ao resto dos caracteres.
+Veja métodos úteis em:
+https://doc.rust-lang.org/std/primitive.char.html
+Use `char::to_uppercase`, que retorna um iterador convertível para `String`.
+`capitalize_words_vector`: crie um iterador a partir do slice e aplique `capitalize_first`, colete com `collect`.
+`capitalize_words_string`: método similar.
+O método `collect` é poderoso. O Rust infere o tipo desejado."""
+
+[[exercises]]
+name = "iterators3"
+dir = "18_iterators"
+hint = """A função `divide` deve retornar erro se o divisor for zero ou não houver divisão exata.
+A variável `division_results` deve ser uma coleção dos resultados.
+A função `result_with_list` retorna um único `Result`, sucesso é vetor de inteiros, erro é `DivisionError`.
+A função `list_of_results` retorna vetor de resultados.
+Leia sobre uso de `FromIterator` com `collect`:
+https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.collect"""
+
+[[exercises]]
+name = "iterators4"
+dir = "18_iterators"
+hint = """Em linguagens imperativas, você faria um loop `for` ou recursão com `match`.
+No Rust, pode resolver o problema de fatorial de maneira funcional usando intervalo e iterador.
+Veja métodos `fold` e `rfold`."""
+
+[[exercises]]
+name = "iterators5"
+dir = "18_iterators"
+hint = """O trait `std::iter::Iterator` tem vários métodos úteis.
+No `count_collection_iterator`, a variável `collection` é um slice de `HashMap`, converta para iterador para usar métodos.
+O método `fold` é útil aqui.
+Quer desafio extra? Procure outro método mais simples no Iterator!"""
+
+[[exercises]]
+name = "box1"
+dir = "19_smart_pointers"
+hint = """Este exercício ainda não tem dica.
+(Precisa de dica? Abra uma questão em https://github.com/SandmeyerX/rustlings-zh-cn/issues)"""
+
+[[exercises]]
+name = "rc1"
+dir = "19_smart_pointers"
+hint = """Este exercício ainda não tem dica.
+(Precisa de dica? Abra uma questão em https://github.com/SandmeyerX/rustlings-zh-cn/issues)"""
+
+[[exercises]]
+name = "arc1"
+dir = "19_smart_pointers"
+test = false
+hint = """Este exercício ainda não tem dica.
+(Precisa de dica? Abra uma questão em https://github.com/SandmeyerX/rustlings-zh-cn/issues)"""
+
+[[exercises]]
+name = "cow1"
+dir = "19_smart_pointers"
+hint = """Este exercício ainda não tem dica.
+(Precisa de dica? Abra uma questão em https://github.com/SandmeyerX/rustlings-zh-cn/issues)"""
+
+[[exercises]]
+name = "threads1"
+dir = "20_threads"
+test = false
+hint = """`JoinHandle` é a estrutura retornada pela thread criada.
+https://doc.rust-lang.org/std/thread/fn.spawn.html
+Em programas multithread, o problema é que a thread principal pode encerrar antes das threads criadas. Use `JoinHandle` para esperar cada thread e coletar o resultado."""
+
+[[exercises]]
+name = "threads2"
+dir = "20_threads"
+test = false
+hint = """`Arc` é um ponteiro com contagem de referência atômica, permitindo acesso seguro compartilhado a dados imutáveis.
+Mas neste exercício queremos alterar `jobs_done`, então precisamos de outro tipo que permita apenas um thread alterar por vez.
+Veja no The Rust Book:
+https://doc.rust-lang.org/stable/book/ch16-03-shared-state.html#using-mutexes-to-allow-access-to-data-from-one-thread-at-a-time"""
+
+[[exercises]]
+name = "threads3"
+dir = "20_threads"
+hint = """Outra abordagem para concorrência entre threads é usar canais mpc (multi-produtor, consumidor único).
+Com um emissor e receptor, pode enviar valores em uma thread e receber em outra.
+Clone o receptor para criar vários produtores.
+Veja no The Rust Book:
+https://doc.rust-lang.org/stable/book/ch16-02-message-passing.html"""
+
+[[exercises]]
+name = "macros1"
+dir = "21_macros"
+test = false
+hint = """Ao chamar macros no Rust, é necessário adicionar um caractere especial, diferente da chamada de função comum."""
+
+[[exercises]]
+name = "macros2"
+dir = "21_macros"
+test = false
+hint = """Macros no Rust não seguem totalmente as regras de funções comuns.
+A posição da definição e o local de uso são importantes."""
+
+[[exercises]]
+name = "macros3"
+dir = "21_macros"
+test = false
+hint = """Para usar macros fora do módulo, é preciso tratá-lo especialmente e exportar para o diretório superior."""
+
+[[exercises]]
+name = "macros4"
+dir = "21_macros"
+test = false
+hint = """Basta adicionar um caractere para compilar.
+Macros são escritas separando cada ramo do macro com um certo símbolo.
+Aqui termina o exercício sobre macros, mas há muito mais para aprender.
+Leia mais em The Little Book of Rust Macros:
+https://veykril.github.io/tlborm/"""
+
+[[exercises]]
+name = "clippy1"
+dir = "22_clippy"
+test = false
+hint = """A biblioteca padrão do Rust traz constantes matemáticas de precisão longa e infinita:
+https://doc.rust-lang.org/stable/std/f32/consts/index.html
+Às vezes queremos usar aproximações de constantes matemáticas, mas o Clippy alerta para valores imprecisos.
+Veja os avisos do Clippy e use as constantes corretas de `std::f32::consts`."""
+
+[[exercises]]
+name = "clippy2"
+dir = "22_clippy"
+test = false
+hint = """Loops sobre Option podem ser escritos como if-let."""
+skip_check_unsolved = true
+
+[[exercises]]
+name = "clippy3"
+dir = "22_clippy"
+test = false
+hint = """Este exercício ainda não tem dica.
+(Precisa de dica? Abra uma questão em https://github.com/SandmeyerX/rustlings-zh-cn/issues)"""
+
+[[exercises]]
+name = "using_as"
+dir = "23_conversions"
+hint = """Use o operador `as` para converter um dos operandos na última linha da função `average` para o tipo desejado."""
+
+[[exercises]]
+name = "from_into"
+dir = "23_conversions"
+hint = """Siga os mesmos passos que acabou de implementar em `From`."""
+
+[[exercises]]
+name = "from_str"
+dir = "23_conversions"
+hint = """Ao implementar `FromStr`, especifique o objeto `Person` e retorne `Ok`, se a string não estiver correta, retorne o erro com `Err`.
+Outra dica:
+Use o método `map_err` de `Result` e uma closure para tratar erro do `parse::<u8>`.
+Outra dica:
+Se quiser usar o operador `?`, veja:
+https://doc.rust-lang.org/stable/rust-by-example/error/multiple_error_types/reenter_question_mark.html"""
+
+[[exercises]]
+name = "try_from_into"
+dir = "23_conversions"
+hint = """Na biblioteca padrão, existe algo para conversão de inteiros ao implementar TryFrom e verificar faixa de entrada?
+Desafio: é possível implementar TryFrom de forma genérica para muitos tipos inteiros?"""
+
+[[exercises]]
+name = "as_ref_mut"
+dir = "23_conversions"
+hint = """Vamos adicionar o trait `AsRef<str>` ou `AsMut<u32>` como vínculo de função."""
