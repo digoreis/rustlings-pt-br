@@ -1,8 +1,8 @@
 fn main() {
     let cat = ("Furry McFurson", 3.5);
 
-    // Destructuring the tuple.
+    // Desestruturando a tupla.
     let (name, age) = cat;
 
-    println!("{name} is {age} years old");
+    println!("{name} tem {age} anos de idade");
 }

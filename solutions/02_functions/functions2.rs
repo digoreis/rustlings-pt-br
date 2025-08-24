@@ -1,8 +1,8 @@
-// The type of function arguments must be annotated.
-// Added the type annotation `u64`.
+// O tipo dos argumentos da função deve ser anotado.
+// Adicionada a anotação de tipo `u64`.
 fn call_me(num: u64) {
     for i in 0..num {
-        println!("Ring! Call number {}", i + 1);
+        println!("Chamando! Número chamando {}", i + 1);
     }
 }
 

@@ -1,21 +1,21 @@
 fn main() {
     let my_first_initial = 'C';
     if my_first_initial.is_alphabetic() {
-        println!("Alphabetical!");
+        println!("Letra!");
     } else if my_first_initial.is_numeric() {
-        println!("Numerical!");
+        println!("Numérico!");
     } else {
-        println!("Neither alphabetic nor numeric!");
+        println!("Nem alfabético nem numérico!");
     }
 
-    // Example with an emoji.
+    // Exemplo com um emoji.
     let your_character = '🦀';
 
     if your_character.is_alphabetic() {
-        println!("Alphabetical!");
+        println!("Letra!");
     } else if your_character.is_numeric() {
-        println!("Numerical!");
+        println!("Numérico!");
     } else {
-        println!("Neither alphabetic nor numeric!");
+        println!("Nem alfabético nem numérico!");
     }
 }

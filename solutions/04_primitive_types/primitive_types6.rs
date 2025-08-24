@@ -1,5 +1,5 @@
 fn main() {
-    // You can optionally experiment here.
+    // Você pode experimentar aqui, se quiser.
 }
 
 #[cfg(test)]
@@ -8,9 +8,9 @@ mod tests {
     fn indexing_tuple() {
         let numbers = (1, 2, 3);
 
-        // Tuple indexing syntax.
+        // Sintaxe de indexação de tupla.
         let second = numbers.1;
 
-        assert_eq!(second, 2, "This is not the 2nd number in the tuple!");
+        assert_eq!(second, 2, "Este não é o 2º número na tupla!");
     }
 }

@@ -1,5 +1,5 @@
-// TODO: Add some function with the name `call_me` without arguments or a return value.
+// TODO: Adicionar uma função `call_me` sem parametros e sem nenhum retorno.
 
 fn main() {
-    call_me(); // Don't change this line
+    call_me(); // Não altere essa linha :)
 }

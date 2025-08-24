@@ -3,13 +3,13 @@
 fn main() {
     let is_morning = true;
     if is_morning {
-        println!("Good morning!");
+        println!("Bom dia!");
     }
 
-    // TODO: Define a boolean variable with the name `is_evening` before the `if` statement below.
-    // The value of the variable should be the negation (opposite) of `is_morning`.
+    // TODO: Defina uma variável booleana com o nome `is_evening` antes da instrução `if` abaixo.
+    // O valor da variável deve ser a negação (oposto) de `is_morning`.
     // let …
     if is_evening {
-        println!("Good evening!");
+        println!("Boa noite!");
     }
 }

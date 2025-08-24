@@ -1,9 +1,9 @@
 fn square(num: i32) -> i32 {
-    // Removed the semicolon `;` at the end of the line below to implicitly return the result.
+    // Removido o ponto e vírgula `;` ao final da linha abaixo para retornar implicitamente o resultado.
     num * num
 }
 
 fn main() {
     let answer = square(3);
-    println!("The square of 3 is {answer}");
+    println!("O quadrado de 3 é {answer}");
 }

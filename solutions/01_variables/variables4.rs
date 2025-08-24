@@ -1,9 +1,9 @@
 fn main() {
-    // In Rust, variables are immutable by default.
-    // Adding the `mut` keyword after `let` makes the declared variable mutable.
+    // Em Rust, variáveis são imutáveis por padrão.
+    // Adicionar a palavra-chave `mut` após o `let` torna a variável declarada mutável.
     let mut x = 3;
-    println!("Number {x}");
+    println!("Número {x}");
 
     x = 5;
-    println!("Number {x}");
+    println!("Número {x}");
 }

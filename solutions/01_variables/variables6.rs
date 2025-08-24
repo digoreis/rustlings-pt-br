@@ -1,6 +1,6 @@
-// The type of constants must always be annotated.
+// O tipo das constantes deve sempre ser anotado.
 const NUMBER: u64 = 3;
 
 fn main() {
-    println!("Number: {NUMBER}");
+    println!("Número: {NUMBER}");
 }

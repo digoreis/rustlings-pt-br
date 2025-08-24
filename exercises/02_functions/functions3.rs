@@ -5,6 +5,6 @@ fn call_me(num: u8) {
 }
 
 fn main() {
-    // TODO: Fix the function call.
+    // TODO: Arrume a chamada da função.
     call_me();
 }

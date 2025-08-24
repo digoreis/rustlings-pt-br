@@ -1,15 +1,15 @@
 #![allow(clippy::needless_late_init)]
 
 fn main() {
-    // Reading uninitialized variables isn't allowed in Rust!
-    // Therefore, we need to assign a value first.
+    // Ler variáveis não inicializadas não é permitido em Rust!
+    // Portanto, precisamos atribuir um valor primeiro.
     let x: i32 = 42;
 
-    println!("Number {x}");
+    println!("Número {x}");
 
-    // It is possible to declare a variable and initialize it later.
-    // But it can't be used before initialization.
+    // É possível declarar uma variável e inicializá-la depois.
+    // Mas ela não pode ser usada antes da inicialização.
     let y: i32;
     y = 42;
-    println!("Number {y}");
+    println!("Número {y}");
 }

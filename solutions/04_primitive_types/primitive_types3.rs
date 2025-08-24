@@ -1,11 +1,11 @@
 fn main() {
-    // An array with 100 elements of the value 42.
+    // Um array com 100 elementos, todos com o valor 42.
     let a = [42; 100];
 
     if a.len() >= 100 {
-        println!("Wow, that's a big array!");
+        println!("Uau, isso é um array grande!");
     } else {
-        println!("Meh, I eat arrays like that for breakfast.");
-        panic!("Array not big enough, more elements needed");
+        println!("Meh, eu como arrays assim no café da manhã.");
+        panic!("Array não é grande o suficiente, precisa de mais elementos");
     }
 }

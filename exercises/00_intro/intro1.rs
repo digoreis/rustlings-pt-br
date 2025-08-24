@@ -1,9 +1,9 @@
-// TODO: We sometimes encourage you to keep trying things on a given exercise
-// even after you already figured it out. If you got everything working and feel
-// ready for the next exercise, enter `n` in the terminal.
+// TODO: Às vezes, incentivamos você a continuar tentando coisas em um exercício
+// mesmo depois de já ter resolvido. Se você conseguiu fazer tudo funcionar e se sente
+// pronto para o próximo exercício, digite `n` no terminal.
 //
-// The exercise file will be reloaded when you change one of the lines below!
-// Try adding a new `println!` and check the updated output in the terminal.
+// O arquivo do exercício será recarregado quando você alterar uma das linhas abaixo!
+// Tente adicionar um novo `println!` e confira a saída atualizada no terminal.
 
 fn main() {
     println!(r#"       Bem-vindo ao...                    "#);

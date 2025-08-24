@@ -6,25 +6,25 @@ fn animal_habitat(animal: &str) -> &str {
     } else if animal == "snake" {
         3
     } else {
-        // Any unused identifier.
+        // Qualquer identificador não utilizado.
         4
     };
 
-    // Instead of such an identifier, you would use an enum in Rust.
-    // But we didn't get into enums yet.
+    // Em vez de um identificador assim, você usaria um enum em Rust.
+    // Mas ainda não chegamos em enums.
     if identifier == 1 {
-        "Beach"
+        "Praia"
     } else if identifier == 2 {
-        "Burrow"
+        "Toca"
     } else if identifier == 3 {
-        "Desert"
+        "Deserto"
     } else {
-        "Unknown"
+        "Desconhecido"
     }
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // Você pode experimentar aqui, se quiser.
 }
 
 #[cfg(test)]
@@ -33,21 +33,21 @@ mod tests {
 
     #[test]
     fn gopher_lives_in_burrow() {
-        assert_eq!(animal_habitat("gopher"), "Burrow")
+        assert_eq!(animal_habitat("gopher"), "Toca")
     }
 
     #[test]
     fn snake_lives_in_desert() {
-        assert_eq!(animal_habitat("snake"), "Desert")
+        assert_eq!(animal_habitat("snake"), "Deserto")
     }
 
     #[test]
     fn crab_lives_on_beach() {
-        assert_eq!(animal_habitat("crab"), "Beach")
+        assert_eq!(animal_habitat("crab"), "Praia")
     }
 
     #[test]
     fn unknown_animal() {
-        assert_eq!(animal_habitat("dinosaur"), "Unknown")
+        assert_eq!(animal_habitat("dinosaur"), "Desconhecido")
     }
 }

@@ -1,4 +1,4 @@
-// Some function with the name `call_me` without arguments or a return value.
+// Uma função chamada `call_me` sem argumentos ou valor de retorno.
 fn call_me() {
     println!("Hello world!");
 }
