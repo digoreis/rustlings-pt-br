@@ -1,5 +1,5 @@
-// Structs contain data, but can also have logic. In this exercise, we have
-// defined the `Package` struct, and we want to test some logic attached to it.
+// Structs contêm dados, mas também podem ter lógica. Neste exercício, nós
+// definimos a struct `Package`, e queremos testar alguma lógica associada a ela.
 
 #[derive(Debug)]
 struct Package {
@@ -11,8 +11,8 @@ struct Package {
 impl Package {
     fn new(sender_country: String, recipient_country: String, weight_in_grams: u32) -> Self {
         if weight_in_grams < 10 {
-            // This isn't how you should handle errors in Rust, but we will
-            // learn about error handling later.
+            // Esta não é a forma como você deve lidar com erros em Rust, mas nós
+            // aprenderemos sobre tratamento de erros mais tarde.
             panic!("Can't ship a package with weight below 10 grams");
         }
 
@@ -25,18 +25,18 @@ impl Package {
 
     // TODO: Add the correct return type to the function signature.
     fn is_international(&self) {
-        // TODO: Read the tests that use this method to find out when a package
-        // is considered international.
+        // TODO: Leia os testes que usam este método para descobrir quando um pacote
+        // é considerado internacional.
     }
 
-    // TODO: Add the correct return type to the function signature.
+    // TODO: Adicione o tipo de retorno correto na assinatura da função.
     fn get_fees(&self, cents_per_gram: u32) {
-        // TODO: Calculate the package's fees.
+        // TODO: Calcule as taxas do pacote.
     }
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // Você pode experimentar aqui, se quiser.
 }
 
 #[cfg(test)]
