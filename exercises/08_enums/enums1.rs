@@ -1,6 +1,6 @@
 #[derive(Debug)]
 enum Message {
-    // TODO: Define a few types of messages as used below.
+    // TODO: Defina alguns tipos de mensagens como usado abaixo.
 }
 
 fn main() {
