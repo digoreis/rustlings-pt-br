@@ -7,7 +7,7 @@ fn fill_vec(vec: Vec<i32>) -> Vec<i32> {
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // Você pode experimentar aqui, se quiser.
 }
 
 #[cfg(test)]
@@ -18,8 +18,7 @@ mod tests {
     fn move_semantics2() {
         let vec0 = vec![22, 44, 66];
 
-        // Cloning `vec0` so that the clone is moved into `fill_vec`, not `vec0`
-        // itself.
+        // Clonando `vec0` para que o clone seja movido para `fill_vec`, não o próprio `vec0`.
         let vec1 = fill_vec(vec0.clone());
 
         assert_eq!(vec0, [22, 44, 66]);

@@ -1,14 +1,14 @@
 #![allow(clippy::ptr_arg)]
 
-// TODO: Fix the compiler errors without changing anything except adding or
-// removing references (the character `&`).
+// TODO: Corrija os erros do compilador sem alterar nada exceto adicionar ou
+// remover referências (o caractere `&`).
 
-// Shouldn't take ownership
+// Não deve tomar posse
 fn get_char(data: String) -> char {
     data.chars().last().unwrap()
 }
 
-// Should take ownership
+// Deve tomar posse
 fn string_uppercase(mut data: &String) {
     data = data.to_uppercase();
 
