@@ -24,7 +24,7 @@ impl ParsePosNonzeroError {
         Self::Creation(err)
     }
 
-    // TODO: Add another error conversion function here.
+    // TODO: Adicione another error conversion function here.
     // fn from_parse_int(???) -> Self { ??? }
 }
 
@@ -49,7 +49,7 @@ impl PositiveNonzeroInteger {
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // Você pode experimentar aqui, se quiser.
 }
 
 #[cfg(test)]

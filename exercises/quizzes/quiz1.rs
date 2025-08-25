@@ -1,4 +1,4 @@
-// This is a quiz for the following sections:
+// Este é um quiz para as seguintes seções:
 // - Variables
 // - Functions
 // - If
@@ -8,12 +8,12 @@
 // - However, if Mary buys more than 40 apples, the price of each apple in the
 // entire order is reduced to only 1 rustbuck!
 
-// TODO: Write a function that calculates the price of an order of apples given
+// TODO: Escreva a function that calculates the price of an order of apples given
 // the quantity bought.
 // fn calculate_price_of_apples(???) -> ??? { ??? }
 
 fn main() {
-    // You can optionally experiment here.
+    // Você pode experimentar aqui, se quiser.
 }
 
 // Don't change the tests!

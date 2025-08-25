@@ -16,7 +16,7 @@ fn abs_all(input: &mut Cow<[i32]>) {
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // Você pode experimentar aqui, se quiser.
 }
 
 #[cfg(test)]

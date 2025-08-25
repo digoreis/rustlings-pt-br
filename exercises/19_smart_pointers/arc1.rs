@@ -22,13 +22,13 @@ use std::{sync::Arc, thread};
 fn main() {
     let numbers: Vec<_> = (0..100u32).collect();
 
-    // TODO: Define `shared_numbers` by using `Arc`.
+    // TODO: Defina `shared_numbers` by using `Arc`.
     // let shared_numbers = ???;
 
     let mut join_handles = Vec::new();
 
     for offset in 0..8 {
-        // TODO: Define `child_numbers` using `shared_numbers`.
+        // TODO: Defina `child_numbers` using `shared_numbers`.
         // let child_numbers = ???;
 
         let handle = thread::spawn(move || {

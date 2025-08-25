@@ -13,7 +13,7 @@ fn factorial(num: u64) -> u64 {
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // Você pode experimentar aqui, se quiser.
 }
 
 #[cfg(test)]

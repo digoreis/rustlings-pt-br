@@ -39,7 +39,7 @@ impl TryFrom<[i16; 3]> for Color {
 }
 
 // TODO: Slice implementation.
-// This implementation needs to check the slice length.
+// Esta implementação needs to check the slice length.
 impl TryFrom<&[i16]> for Color {
     type Error = IntoColorError;
 

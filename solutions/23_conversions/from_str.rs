@@ -1,4 +1,4 @@
-// This is similar to the previous `from_into` exercise. But this time, we'll
+// Isso é similar to the previous `from_into` exercise. But this time, we'll
 // implement `FromStr` and return errors instead of falling back to a default
 // value. Additionally, upon implementing `FromStr`, you can use the `parse`
 // method on strings to generate an object of the implementor type. You can read

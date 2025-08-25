@@ -1,6 +1,6 @@
 // Lifetimes are also needed when structs hold references.
 
-// TODO: Fix the compiler errors about the struct.
+// TODO: Corrija o erro do compiladors about the struct.
 struct Book {
     author: &str,
     title: &str,

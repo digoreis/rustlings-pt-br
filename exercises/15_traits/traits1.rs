@@ -5,7 +5,7 @@ trait AppendBar {
 }
 
 impl AppendBar for String {
-    // TODO: Implement `AppendBar` for the type `String`.
+    // TODO: Implemente `AppendBar` for the type `String`.
 }
 
 fn main() {

@@ -5,7 +5,7 @@
 // warnings. Check Clippy's suggestions from the output to solve the exercise.
 
 fn main() {
-    // TODO: Fix the Clippy lint in this line.
+    // TODO: Corrija o Clippy lint in this line.
     let pi = 3.14;
     let radius: f32 = 5.0;
 

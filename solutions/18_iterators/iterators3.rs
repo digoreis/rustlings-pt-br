@@ -42,7 +42,7 @@ fn list_of_results() -> Vec<Result<i64, DivisionError>> {
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // Você pode experimentar aqui, se quiser.
 }
 
 #[cfg(test)]

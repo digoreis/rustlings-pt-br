@@ -16,12 +16,12 @@ enum List {
     Nil,
 }
 
-// TODO: Create an empty cons list.
+// TODO: Crie an empty cons list.
 fn create_empty_list() -> List {
     todo!()
 }
 
-// TODO: Create a non-empty cons list.
+// TODO: Crie a non-empty cons list.
 fn create_non_empty_list() -> List {
     todo!()
 }

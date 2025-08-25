@@ -3,7 +3,7 @@
 // iterator and how to go through elements within an iterable collection.
 
 fn main() {
-    // You can optionally experiment here.
+    // Você pode experimentar aqui, se quiser.
 }
 
 #[cfg(test)]
