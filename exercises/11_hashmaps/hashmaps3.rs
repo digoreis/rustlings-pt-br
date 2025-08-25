@@ -21,7 +21,7 @@ fn build_scores_table(results: &str) -> HashMap<&str, TeamScores> {
 
     for line in results.lines() {
         let mut split_iterator = line.split(',');
-        // NOTE: We use `unwrap` because we didn't deal with error handling yet.
+        // NOTA: We use `unwrap` because we didn't deal with error handling yet.
         let team_1_name = split_iterator.next().unwrap();
         let team_2_name = split_iterator.next().unwrap();
         let team_1_score: u8 = split_iterator.next().unwrap().parse().unwrap();
@@ -37,7 +37,7 @@ fn build_scores_table(results: &str) -> HashMap<&str, TeamScores> {
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // Você pode experimentar aqui, se quiser.
 }
 
 #[cfg(test)]

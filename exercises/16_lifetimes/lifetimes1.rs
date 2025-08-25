@@ -3,7 +3,7 @@
 // going out of scope before it is used. Remember, references are borrows and do
 // not own their own data. What if their owner goes out of scope?
 
-// TODO: Fix the compiler error by updating the function signature.
+// TODO: Corrija o erro do compilador by updating the function signature.
 fn longest(x: &str, y: &str) -> &str {
     if x.len() > y.len() {
         x
@@ -13,7 +13,7 @@ fn longest(x: &str, y: &str) -> &str {
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // Você pode experimentar aqui, se quiser.
 }
 
 #[cfg(test)]

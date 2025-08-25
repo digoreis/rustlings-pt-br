@@ -14,7 +14,7 @@ fn generate_nametag_text(name: String) -> Option<String> {
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // Você pode experimentar aqui, se quiser.
 }
 
 #[cfg(test)]

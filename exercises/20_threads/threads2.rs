@@ -29,6 +29,6 @@ fn main() {
         handle.join().unwrap();
     }
 
-    // TODO: Print the value of `JobStatus.jobs_done`.
+    // TODO: Imprima the value of `JobStatus.jobs_done`.
     println!("Jobs done: {}", todo!());
 }

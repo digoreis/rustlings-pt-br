@@ -35,7 +35,7 @@ fn send_tx(q: Queue, tx: mpsc::Sender<u32>) {
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // Você pode experimentar aqui, se quiser.
 }
 
 #[cfg(test)]

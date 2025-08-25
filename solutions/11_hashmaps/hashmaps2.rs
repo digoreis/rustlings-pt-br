@@ -35,7 +35,7 @@ fn fruit_basket(basket: &mut HashMap<Fruit, u32>) {
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // Você pode experimentar aqui, se quiser.
 }
 
 #[cfg(test)]

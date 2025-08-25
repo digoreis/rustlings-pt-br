@@ -16,7 +16,7 @@ impl Licensed for SomeSoftware {}
 impl Licensed for OtherSoftware {}
 
 fn main() {
-    // You can optionally experiment here.
+    // Você pode experimentar aqui, se quiser.
 }
 
 #[cfg(test)]

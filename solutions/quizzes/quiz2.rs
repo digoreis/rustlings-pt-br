@@ -1,14 +1,14 @@
-// Let's build a little machine in the form of a function. As input, we're going
-// to give a list of strings and commands. These commands determine what action
-// is going to be applied to the string. It can either be:
+// Vamos construir uma pequena máquina in the form of a function. As input, we're going
+// to give a list of strings and commands. Esses comandos determinam que ação
+// será aplicada à string. Pode ser:
 // - Uppercase the string
 // - Trim the string
 // - Append "bar" to the string a specified amount of times
 //
-// The exact form of this will be:
-// - The input is going to be a vector of 2-length tuples,
+// A forma exata disso será:
+// - A entrada será a vector of 2-length tuples,
 //   the first element is the string, the second one is the command.
-// - The output element is going to be a vector of strings.
+// - O elemento de saída será a vector of strings.
 
 enum Command {
     Uppercase,
@@ -54,7 +54,7 @@ mod my_module {
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // Você pode experimentar aqui, se quiser.
 }
 
 #[cfg(test)]

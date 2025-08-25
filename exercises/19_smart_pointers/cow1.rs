@@ -16,7 +16,7 @@ fn abs_all(input: &mut Cow<[i32]>) {
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // Você pode experimentar aqui, se quiser.
 }
 
 #[cfg(test)]
@@ -38,7 +38,7 @@ mod tests {
         let vec = vec![0, 1, 2];
         let mut input = Cow::from(&vec);
         abs_all(&mut input);
-        // TODO: Replace `todo!()` with `Cow::Owned(_)` or `Cow::Borrowed(_)`.
+        // TODO: Substitua `todo!()` with `Cow::Owned(_)` or `Cow::Borrowed(_)`.
         assert!(matches!(input, todo!()));
     }
 
@@ -51,7 +51,7 @@ mod tests {
         let vec = vec![0, 1, 2];
         let mut input = Cow::from(vec);
         abs_all(&mut input);
-        // TODO: Replace `todo!()` with `Cow::Owned(_)` or `Cow::Borrowed(_)`.
+        // TODO: Substitua `todo!()` with `Cow::Owned(_)` or `Cow::Borrowed(_)`.
         assert!(matches!(input, todo!()));
     }
 
@@ -63,7 +63,7 @@ mod tests {
         let vec = vec![-1, 0, 1];
         let mut input = Cow::from(vec);
         abs_all(&mut input);
-        // TODO: Replace `todo!()` with `Cow::Owned(_)` or `Cow::Borrowed(_)`.
+        // TODO: Substitua `todo!()` with `Cow::Owned(_)` or `Cow::Borrowed(_)`.
         assert!(matches!(input, todo!()));
     }
 }

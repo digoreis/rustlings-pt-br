@@ -10,7 +10,7 @@ fn fruit_basket() -> HashMap<String, u32> {
     // Declare the hash map.
     let mut basket = HashMap::new();
 
-    // Two bananas are already given for you :)
+    // Duas bananas já estão dadas para você :)
     basket.insert(String::from("banana"), 2);
 
     // Put more fruits in your basket.
@@ -21,7 +21,7 @@ fn fruit_basket() -> HashMap<String, u32> {
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // Você pode experimentar aqui, se quiser.
 }
 
 #[cfg(test)]

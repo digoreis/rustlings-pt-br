@@ -7,19 +7,19 @@
 use std::collections::HashMap;
 
 fn fruit_basket() -> HashMap<String, u32> {
-    // TODO: Declare the hash map.
+    // TODO: Declare o hash map.
     // let mut basket =
 
-    // Two bananas are already given for you :)
+    // Duas bananas já estão dadas para você :)
     basket.insert(String::from("banana"), 2);
 
-    // TODO: Put more fruits in your basket.
+    // TODO: Coloque mais frutas na sua cesta.
 
     basket
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // Você pode experimentar aqui, se quiser.
 }
 
 #[cfg(test)]

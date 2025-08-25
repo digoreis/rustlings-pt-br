@@ -1,5 +1,5 @@
 trait Licensed {
-    // TODO: Add a default implementation for `licensing_info` so that
+    // TODO: Adicione a default implementation for `licensing_info` so that
     // implementors like the two structs below can share that default behavior
     // without repeating the function.
     // The default license information should be the string "Default license".
@@ -18,7 +18,7 @@ impl Licensed for SomeSoftware {} // Don't edit this line.
 impl Licensed for OtherSoftware {} // Don't edit this line.
 
 fn main() {
-    // You can optionally experiment here.
+    // Você pode experimentar aqui, se quiser.
 }
 
 #[cfg(test)]

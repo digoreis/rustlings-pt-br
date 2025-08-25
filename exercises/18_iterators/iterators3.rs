@@ -8,20 +8,20 @@ enum DivisionError {
     NotDivisible,
 }
 
-// TODO: Calculate `a` divided by `b` if `a` is evenly divisible by `b`.
+// TODO: Calcule `a` divided by `b` if `a` is evenly divisible by `b`.
 // Otherwise, return a suitable error.
 fn divide(a: i64, b: i64) -> Result<i64, DivisionError> {
     todo!();
 }
 
-// TODO: Add the correct return type and complete the function body.
+// TODO: Adicione o correct return type and complete the function body.
 // Desired output: `Ok([1, 11, 1426, 3])`
 fn result_with_list() {
     let numbers = [27, 297, 38502, 81];
     let division_results = numbers.into_iter().map(|n| divide(n, 27));
 }
 
-// TODO: Add the correct return type and complete the function body.
+// TODO: Adicione o correct return type and complete the function body.
 // Desired output: `[Ok(1), Ok(11), Ok(1426), Ok(3)]`
 fn list_of_results() {
     let numbers = [27, 297, 38502, 81];
@@ -29,7 +29,7 @@ fn list_of_results() {
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // Você pode experimentar aqui, se quiser.
 }
 
 #[cfg(test)]
