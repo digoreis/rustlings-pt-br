@@ -1,8 +1,8 @@
-// You can use the `use` keyword to bring module paths from modules from
-// anywhere and especially from the standard library into your scope.
+// Você pode usar a palavra-chave `use` para trazer caminhos de módulos de módulos de
+// qualquer lugar e especialmente da biblioteca padrão para o seu escopo.
 
-// TODO: Bring `SystemTime` and `UNIX_EPOCH` from the `std::time` module into
-// your scope. Bonus style points if you can do it with one line!
+// TODO: Traga `SystemTime` e `UNIX_EPOCH` do módulo `std::time` para
+// o seu escopo. Pontos de estilo extras se você conseguir fazer isso com uma linha!
 // use ???;
 
 fn main() {

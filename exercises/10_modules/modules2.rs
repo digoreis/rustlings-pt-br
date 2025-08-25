@@ -1,8 +1,8 @@
-// You can bring module paths into scopes and provide new names for them with
-// the `use` and `as` keywords.
+// Você pode trazer caminhos de módulos para escopos e fornecer novos nomes para eles com
+// as palavras-chave `use` e `as`.
 
 mod delicious_snacks {
-    // TODO: Add the following two `use` statements after fixing them.
+    // TODO: Adicione as duas declarações `use` a seguir depois de corrigi-las.
     // use self::fruits::PEAR as ???;
     // use self::veggies::CUCUMBER as ???;
 
