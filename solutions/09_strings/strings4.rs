@@ -15,19 +15,19 @@ fn main() {
 
     string("rust is fun!".to_owned());
 
-    // Here, both answers work.
-    // `.into()` converts a type into an expected type.
-    // If it is called where `String` is expected, it will convert `&str` to `String`.
+    // Aqui, ambas as respostas funcionam.
+    // `.into()` converte um tipo no tipo esperado.
+    // Se for chamado onde `String` é esperado, converterá `&str` para `String`.
     string("nice weather".into());
-    // But if it is called where `&str` is expected, then `&str` is kept `&str` since no conversion is needed.
-    // If you remove the `#[allow(…)]` line, then Clippy will tell you to remove `.into()` below since it is a useless conversion.
+    // Mas se for chamado onde `&str` é esperado, então `&str` permanece `&str` já que nenhuma conversão é necessária.
+    // Se você remover a linha `#[allow(…)]`, então Clippy dirá para remover `.into()` abaixo já que é uma conversão inútil.
     #[allow(clippy::useless_conversion)]
     string_slice("nice weather".into());
 
     string(format!("Interpolation {}", "Station"));
 
-    // WARNING: This is byte indexing, not character indexing.
-    // Character indexing can be done using `s.chars().nth(INDEX)`.
+    // AVISO: Isso é indexação de bytes, não indexação de caracteres.
+    // Indexação de caracteres pode ser feita usando `s.chars().nth(INDEX)`.
     string_slice(&String::from("abc")[0..1]);
 
     string_slice("  hello there ".trim());
