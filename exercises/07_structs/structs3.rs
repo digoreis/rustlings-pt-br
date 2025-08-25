@@ -23,7 +23,7 @@ impl Package {
         }
     }
 
-    // TODO: Add the correct return type to the function signature.
+    // TODO: Adicione o tipo de retorno correto na assinatura da função.
     fn is_international(&self) {
         // TODO: Leia os testes que usam este método para descobrir quando um pacote
         // é considerado internacional.
