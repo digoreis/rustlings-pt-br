@@ -8,8 +8,8 @@ struct Package {
 impl Package {
     fn new(sender_country: String, recipient_country: String, weight_in_grams: u32) -> Self {
         if weight_in_grams < 10 {
-            // This isn't how you should handle errors in Rust, but we will
-            // learn about error handling later.
+            // Esta não é a forma como você deve lidar com erros em Rust, mas nós
+            // aprenderemos sobre tratamento de erros mais tarde.
             panic!("Can't ship a package with weight below 10 grams");
         }
 
@@ -32,7 +32,7 @@ impl Package {
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // Você pode experimentar aqui, se quiser.
 }
 
 #[cfg(test)]
