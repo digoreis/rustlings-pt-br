@@ -32,5 +32,7 @@ mod tests {
         };
         assert_eq!(some_software.licensing_info(), licensing_info);
         assert_eq!(other_software.licensing_info(), licensing_info);
+        assert_eq!(some_software.version_number, 1);
+        assert_eq!(other_software.version_number, "v2.0.0".to_string());
     }
 }

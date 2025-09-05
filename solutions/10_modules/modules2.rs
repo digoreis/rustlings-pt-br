@@ -1,6 +1,8 @@
 mod delicious_snacks {
     // Added `pub` and used the expected alias after `as`.
+    pub use self::fruits::APPLE as apple;
     pub use self::fruits::PEAR as fruit;
+    pub use self::veggies::CARROT as carrot;
     pub use self::veggies::CUCUMBER as veggie;
 
     mod fruits {
@@ -19,5 +21,10 @@ fn main() {
         "favorite snacks: {} and {}",
         delicious_snacks::fruit,
         delicious_snacks::veggie,
+    );
+    println!(
+        "Not favorite snacks: {} and {}",
+        delicious_snacks::apple,
+        delicious_snacks::carrot,
     );
 }

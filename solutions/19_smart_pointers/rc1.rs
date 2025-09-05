@@ -9,6 +9,7 @@ use std::rc::Rc;
 struct Sun;
 
 #[derive(Debug)]
+#[allow(dead_code)]
 enum Planet {
     Mercury(Rc<Sun>),
     Venus(Rc<Sun>),
@@ -20,6 +21,7 @@ enum Planet {
     Neptune(Rc<Sun>),
 }
 
+#[allow(dead_code)]
 impl Planet {
     fn details(&self) {
         println!("Hi from {self:?}!");
